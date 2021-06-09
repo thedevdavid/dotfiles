@@ -86,7 +86,7 @@ alias a="arch -x86_64"
 
 source $ZSH/oh-my-zsh.sh
 
-export EDITOR="code-insiders"
+export EDITOR="code"
 export ANDROID_HOME=$HOME/Library/Android/sdk
 export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
@@ -121,6 +121,8 @@ export PATH=$PATH:$ANDROID_HOME/platform-tools
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
+
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Move next only if `homebrew` is installed
 if command -v brew >/dev/null 2>&1; then
