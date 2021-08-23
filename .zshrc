@@ -76,7 +76,7 @@ POWERLEVEL9K_MODE="awesome-patched"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colorize brew zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
 
 alias myip='curl http://ipecho.net/plain; echo'.
 alias ffs='sudo !!'
@@ -92,6 +92,7 @@ export PATH=$PATH:$ANDROID_HOME/emulator
 export PATH=$PATH:$ANDROID_HOME/tools
 export PATH=$PATH:$ANDROID_HOME/tools/bin
 export PATH=$PATH:$ANDROID_HOME/platform-tools
+export SENTRY_PROPERTIES=$HOME/Documents/Work/temp/black-toast-music/apps/client/sentry.properties
 
 # User configuration
 
@@ -130,4 +131,4 @@ if command -v brew >/dev/null 2>&1; then
 	[ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
 fi
 
-. ~/z.sh
+. ~/z.shsource /Users/davidlevai/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
