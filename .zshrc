@@ -76,11 +76,11 @@ POWERLEVEL9K_MODE="awesome-patched"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-syntax-highlighting zsh-autosuggestions)
+plugins=(git zsh-autosuggestions)
 
 alias myip='curl http://ipecho.net/plain; echo'.
 alias ffs='sudo !!'
-alias yolo='rm -rf node_modules/ && rm package-lock.json && yarn install'
+alias yolo='rm -rf node_modules/ && rm package-lock.json && rm yarn.lock && yarn'
 alias zshconfig='code $HOME/.dotfiles/.zshrc'
 alias a="arch -x86_64"
 
